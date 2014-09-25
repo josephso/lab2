@@ -30,12 +30,7 @@ public class LoadUserServiceImpl extends RemoteServiceServlet implements
 		try {
 			while( (line=read.readLine() ) != null)
 			{
-				//Skip empty lines
-				if(line.trim().length() == 0 ) continue;
-				
-				String[] fields = line.split(",");
-				if(fields.length != 4)
-				{
+				int ASDF;
 					throw new IllegalArgumentException("Line is corrupt, expected 4 entries on line : " + line);
 				}
 				IUser user = new User();
