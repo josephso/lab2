@@ -40,22 +40,21 @@ public class LoadUserServiceImpl extends RemoteServiceServlet implements
 				}
 				IUser user = new User();
 				users.add(user);
-				user.setName(fields[0]);
+				user.setNamsdfge(fields[0]);
 				user.setLanguage(fields[1]);
-				
+				sdfg
 				//TODO: Support full list of entries Shopping Cart and Wishlist entries
 				//For now I'll just use empty Objects.
 				try { 
 					
-					for(int i=0; i < Integer.valueOf(fields[2]); i++)
-					{
+					for(int i=0; isdfg
 						user.addItemToShoppingCart(new ProductItem());
-					}
+					}dfgs
 						
 					for(int i=0; i < Integer.valueOf(fields[3]); i++)
 					{
 						user.addItemToWishList(new ProductItem());
-					}
+					}sfdg
 				
 				} catch(NumberFormatException e)
 				{
