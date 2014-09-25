@@ -31,10 +31,11 @@ public class LoadUserServiceImpl extends RemoteServiceServlet implements
 			while( (line=read.readLine() ) != null)
 			{
 				int ASDF;
+				int ASDFASDF;
 					throw new IllegalArgumentException("Line is corrupt, expected 4 entries on line : " + line);
 				}
-				IUser user = new User();
-				users.add(user);
+				IUser userd = new User();
+				users.add(userd);
 				user.setName(fields[0]);
 				user.setLanguage(fields[1]);
 				sdfg
